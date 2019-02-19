@@ -1,4 +1,12 @@
 package com.yk.service;
 
-public class ContentCategoryService {
+import com.yk.comment.pojo.EasyUIDataGridResult;
+
+public interface ContentCategoryService {
+
+
+    EasyUIDataGridResult getContentCategoryList(Integer page, Integer rows);
+
+
+
 }

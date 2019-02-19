@@ -1,4 +1,13 @@
 package com.yk.service;
 
-public class ItemCatService {
+import com.yk.comment.pojo.EasyUITreeNode;
+
+import java.util.List;
+
+public interface ItemCatService {
+
+
+    List<EasyUITreeNode> getItemCatList(Long parentId);
+
+
 }

@@ -12,10 +12,10 @@
     <artifactId>taotao-manager-pojo</artifactId>
     <packaging>jar</packaging>
 
-    <!--<build>
+    <build>
         <finalName>taotao-manager-pojo</finalName>
         <plugins>
-            &lt;!&ndash; 资源文件拷贝插件 &ndash;&gt;
+            <!--&lt;!&ndash; 资源文件拷贝插件 &ndash;&gt;-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
@@ -24,7 +24,7 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            &lt;!&ndash; java编译插件 &ndash;&gt;
+            <!--&lt;!&ndash; java编译插件 &ndash;&gt;-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -36,7 +36,7 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>-->
+    </build>
 
 
 </project>

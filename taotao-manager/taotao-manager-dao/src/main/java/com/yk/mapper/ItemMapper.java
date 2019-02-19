@@ -1,14 +1,18 @@
-package guo.ping.e3mall.manager.mapper;
+package com.yk.mapper;
 
-import guo.ping.e3mall.pojo.TbItem;
+
+import com.yk.pojo.Item;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
+@Repository
+public interface ItemMapper {
 
-public interface TbItemMapper {
 
-    TbItem selectByPrimaryKey(Long id);
+    List<Item> getItemList();
 
-    List<TbItem> getItemList();
 
-    void insert(TbItem item);
+    Item selectByPrimaryKey(Long itemId);
+
+
 }

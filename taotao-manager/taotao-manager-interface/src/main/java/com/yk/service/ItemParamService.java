@@ -1,4 +1,10 @@
 package com.yk.service;
 
-public class ItemParamService {
+import com.yk.comment.pojo.EasyUIDataGridResult;
+
+public interface ItemParamService {
+
+    EasyUIDataGridResult getItemParamList(Integer page, Integer rows);
+
+
 }

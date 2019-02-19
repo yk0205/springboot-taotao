@@ -1,42 +1,27 @@
 package com.yk.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.yk.comment.pojo.EasyUIDataGridResult;
-import com.yk.pojo.Item;
-import com.yk.service.ItemService;
+import com.yk.service.ItemParamService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
 
 @Controller
-@RequestMapping("/item")
+@RequestMapping("/item/param")
 public class ItemParamController {
 
-    @Resource
-    private ItemService itemService;
+    @Reference
+    private ItemParamService itemParamService;
+
 
     @GetMapping("/list")
     @ResponseBody
-    public EasyUIDataGridResult getItemList(Integer page, Integer rows) {
-
-        EasyUIDataGridResult result =  itemService.getItemList(page,rows);
-        return  result;
-    }
-
-    @GetMapping("/{itemId}")
-    @ResponseBody
-    public Item getItemById(@PathVariable Long itemId) {
-        return itemService.getItemById(itemId);
-    }
-
-    @GetMapping("/param/list")
-    @ResponseBody
     public EasyUIDataGridResult getItemParamList(Integer page, Integer rows) {
 
-        EasyUIDataGridResult result =  itemService.getItemList(page,rows);
+        EasyUIDataGridResult result =  itemParamService.getItemParamList(page,rows);
         return  result;
     }
 

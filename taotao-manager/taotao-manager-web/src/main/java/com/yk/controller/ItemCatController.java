@@ -1,12 +1,13 @@
 package com.yk.controller;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.yk.comment.pojo.EasyUITreeNode;
+import com.yk.service.ItemCatService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @Controller
@@ -14,7 +15,7 @@ import java.util.List;
 public class ItemCatController {
 
 
-    @Resource
+    @Reference
     private ItemCatService itemCatService;
 
     @ResponseBody

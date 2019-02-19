@@ -1,7 +1,12 @@
 package com.yk.service.impl;
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.yk.comment.pojo.EasyUITreeNode;
-import org.springframework.stereotype.Service;
+import com.yk.mapper.ItemCatMapper;
+import com.yk.pojo.ItemCat;
+import com.yk.pojo.ItemCatExample;
+import com.yk.service.ItemCatService;
+
 
 import javax.annotation.Resource;
 import java.util.ArrayList;

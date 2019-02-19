@@ -1,10 +1,16 @@
 package com.yk.service;
 
-public class ItemService {
+
+import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.pojo.Item;
+
+public interface ItemService {
 
 
-    public void getItemList(Integer page, Integer rows) {
+    EasyUIDataGridResult getItemList(Integer page, Integer rows);
 
 
-    }
+    Item getItemById(Long itemId);
+
+
 }

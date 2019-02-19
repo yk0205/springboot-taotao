@@ -1,4 +1,4 @@
-package com.taotao.common.pojo;
+package com.yk.comment.pojo;
 
 import java.io.Serializable;
 
