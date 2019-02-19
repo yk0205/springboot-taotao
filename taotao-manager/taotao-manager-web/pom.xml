@@ -11,27 +11,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>taotao-manager-web</artifactId>
-    <packaging>jar</packaging>
-
-    <dependencies>
-        <!--springboot的web组件-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <!--test组件-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <!--thymeleaf组件-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-
-    </dependencies>
 
 
 </project>
