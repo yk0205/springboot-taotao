@@ -1,31 +1,37 @@
 package com.yk.service.impl;
 
-import com.alibaba.dubbo.config.annotation.Service;
 import com.yk.comment.pojo.EasyUITreeNode;
 import com.yk.mapper.ContentCategoryMapper;
 import com.yk.pojo.ContentCategory;
 import com.yk.pojo.ContentCategoryExample;
-import com.yk.service.ContentCategoryService;
+import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
-
+import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.List;
 
-@Service
-public class ContentCategoryServiceImpl implements ContentCategoryService {
+import static org.junit.Assert.*;
 
-    @Autowired
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class ContentCategoryServiceImplTest {
+
+    @Resource
     private ContentCategoryMapper contentCategoryMapper;
 
-    @Override
-    public List<EasyUITreeNode> getContentCategoryList(Long parentId) {
+    @Test
+    public void getContentCategoryListByParentId() {
+
         //根据父节点id查询子节点列表
         ContentCategoryExample example = new ContentCategoryExample();
         //设置查询条件
         ContentCategoryExample.Criteria criteria = example.createCriteria();
         //设置parentid
-        criteria.andParentIdEqualTo(parentId);
+        criteria.andParentIdEqualTo(Long.valueOf(28));
         //执行查询
         List<ContentCategory> list = contentCategoryMapper.selectByExample(example);
         //转换成EasyUITreeNode列表
@@ -39,7 +45,7 @@ public class ContentCategoryServiceImpl implements ContentCategoryService {
             //添加到节点列表
             resultList.add(node);
         }
-        return resultList;
-
+        System.out.println(resultList);
     }
+
 }

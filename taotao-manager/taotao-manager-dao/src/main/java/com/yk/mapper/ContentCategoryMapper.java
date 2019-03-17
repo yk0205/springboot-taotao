@@ -1,15 +1,32 @@
 package com.yk.mapper;
 
-import com.yk.comment.pojo.EasyUIDataGridResult;
 import com.yk.pojo.ContentCategory;
-import org.springframework.stereotype.Repository;
+import com.yk.pojo.ContentCategoryExample;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
-@Repository
 public interface ContentCategoryMapper {
 
+    long countByExample(ContentCategoryExample example);
 
-    List<ContentCategory> getContentCategoryList();
+    int deleteByExample(ContentCategoryExample example);
 
+    int deleteByPrimaryKey(Long id);
+
+    int insert(ContentCategory record);
+
+    int insertSelective(ContentCategory record);
+
+    List<ContentCategory> selectByExample(ContentCategoryExample example);
+
+    ContentCategory selectByPrimaryKey(Long id);
+
+    int updateByExampleSelective(@Param("record") ContentCategory record, @Param("example") ContentCategoryExample example);
+
+    int updateByExample(@Param("record") ContentCategory record, @Param("example") ContentCategoryExample example);
+
+    int updateByPrimaryKeySelective(ContentCategory record);
+
+    int updateByPrimaryKey(ContentCategory record);
 }

@@ -1,12 +1,11 @@
 package com.yk.service;
 
-import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.comment.pojo.EasyUITreeNode;
+
+import java.util.List;
 
 public interface ContentCategoryService {
 
 
-    EasyUIDataGridResult getContentCategoryList(Integer page, Integer rows);
-
-
-
+    List<EasyUITreeNode> getContentCategoryList(Long parentId);
 }

@@ -3,18 +3,22 @@ package com.yk.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class ContentCategory  implements Serializable {
-
-
+public class ContentCategory implements Serializable {
     private Long id;
-    private Long  parentId;
-    private String name;
-    private Integer status;
-    private Integer sortOrder;
-    private Integer isParent;
-    private Date created;
-    private Date updated;
 
+    private Long parentId;
+
+    private String name;
+
+    private Integer status;
+
+    private Integer sortOrder;
+
+    private Boolean isParent;
+
+    private Date created;
+
+    private Date updated;
 
     public Long getId() {
         return id;
@@ -23,7 +27,6 @@ public class ContentCategory  implements Serializable {
     public void setId(Long id) {
         this.id = id;
     }
-
 
     public Long getParentId() {
         return parentId;
@@ -38,7 +41,7 @@ public class ContentCategory  implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getStatus() {
@@ -57,11 +60,11 @@ public class ContentCategory  implements Serializable {
         this.sortOrder = sortOrder;
     }
 
-    public Integer getIsParent() {
+    public Boolean getIsParent() {
         return isParent;
     }
 
-    public void setIsParent(Integer isParent) {
+    public void setIsParent(Boolean isParent) {
         this.isParent = isParent;
     }
 
