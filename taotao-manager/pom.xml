@@ -18,7 +18,6 @@
         <module>taotao-manager-dao</module>
         <module>taotao-manager-pojo</module>
         <module>taotao-manager-web</module>
-        <module>123</module>
     </modules>
 
     <!--依赖taotao-common-->
