@@ -1,7 +1,7 @@
 package com.yk.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
-import com.yk.comment.pojo.EasyUITreeNode;
+import com.yk.common.pojo.EasyUITreeNode;
 import com.yk.mapper.ItemCatMapper;
 import com.yk.pojo.ItemCat;
 import com.yk.pojo.ItemCatExample;

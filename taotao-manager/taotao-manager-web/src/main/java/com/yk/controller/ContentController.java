@@ -2,7 +2,7 @@ package com.yk.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.common.pojo.EasyUIDataGridResult;
 import com.yk.service.ContentService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

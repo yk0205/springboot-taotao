@@ -1,4 +1,4 @@
-package com.yk.comment.pojo;
+package com.yk.common.pojo;
 
 import java.io.Serializable;
 import java.util.List;

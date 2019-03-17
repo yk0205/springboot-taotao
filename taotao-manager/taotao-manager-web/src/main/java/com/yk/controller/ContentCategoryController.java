@@ -2,7 +2,7 @@ package com.yk.controller;
 
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.yk.comment.pojo.EasyUITreeNode;
+import com.yk.common.pojo.EasyUITreeNode;
 import com.yk.service.ContentCategoryService;
 
 import org.springframework.stereotype.Controller;

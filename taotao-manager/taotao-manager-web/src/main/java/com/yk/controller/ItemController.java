@@ -1,7 +1,7 @@
 package com.yk.controller;
 
 import com.alibaba.dubbo.config.annotation.Reference;
-import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.common.pojo.EasyUIDataGridResult;
 
 import com.yk.pojo.Item;
 import com.yk.service.ItemService;
@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
-import javax.annotation.Resource;
 
 @Controller
 @RequestMapping("/item")

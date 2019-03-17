@@ -1,7 +1,7 @@
 package com.yk.service;
 
 
-import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.common.pojo.EasyUIDataGridResult;
 import com.yk.pojo.Item;
 
 public interface ItemService {

@@ -3,7 +3,7 @@ package com.yk.service.impl;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.yk.comment.pojo.EasyUIDataGridResult;
+import com.yk.common.pojo.EasyUIDataGridResult;
 import com.yk.mapper.ContentMapper;
 import com.yk.pojo.ItemParam;
 import com.yk.service.ContentService;
